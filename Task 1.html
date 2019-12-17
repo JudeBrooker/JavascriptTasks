@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showName(){
+            console.log("showName() invoked");
+            alert("Hello");
+            document.getElementById('displayName').innerHTML = "First name is " + document.getElementById('firstName').value;
+            document.write("Everything has gone :-(")
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" id="firstName" name="firstName">
+</form>
+
+<button onclick="showName()">CLICK ME</button>
+
+<div id="displayName"></div>
+</body>
+</html>
